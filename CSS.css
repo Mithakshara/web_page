@@ -1,0 +1,83 @@
+html,body{
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    
+}
+body{
+    background-image: url("../images/hero-bg2.jpg");
+    background-repeat: no-repeat ;
+    background-size: auto;
+    background-size: cover;
+}
+.Header{
+    display: flex;
+    padding: 2vh;
+    margin: auto;
+    border-bottom: 1px solid;
+    
+    
+}
+
+#company_name{
+    width: 80%;
+    height: 6vh;
+    float: left;
+    display: inline;
+    padding-top: 2vh;
+
+}
+#navigation ul{
+    display: inline;
+    float:right;
+    list-style-type: none; 
+    font-weight: bold;
+    padding-top: 2vh;
+    
+    
+     
+}
+
+#navigation ul  a{
+   text-decoration:none;
+   color: brown;
+   padding: 10px;
+}
+#navigation a:hover {
+    background-color: #ddd;
+    color: #f58a42;
+}
+
+#navigation a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+#Body{
+    height: 70%;
+    border: gray 5px solid;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background-color: #ddd;
+    
+}
+ #Body h1{
+    text-align: center;
+    padding-top: 2vh;
+    font-weight: bold;
+ }
+
+form{
+    padding-left: 2vw;
+    padding-top: 4vh;
+}
+#Footer{
+    display: flex;
+    
+}
+#Footer img{
+    width: 50%;
+    height: 35%;
+}

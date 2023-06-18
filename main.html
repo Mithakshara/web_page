@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real State</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script>
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+              $( "#amount" ).val( "RS" + ui.values[ 0 ] + " - RS" + ui.values[ 1 ] );
+            }
+          });
+          $( "#amount" ).val( "£" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - £" + $( "#slider-range" ).slider( "values", 1 ) );
+        });
+        </script>
+
+    
+</head>
+<body>
+    <div class="Header">
+        <div id="company_name">
+            <B>MITHAKSHARA</B> Architects
+        
+        </div>
+        <div id="navigation">
+            <ul>
+                <a href="main.html">Search Page</a>
+                <a href="#####">Favourites page</a>
+            </ul>
+
+        </div>
+        <div id="banner">
+
+        </div>
+
+    </div>
+
+    <div id="Body">
+
+      <h1>𝔽𝕀ℕ𝔻 𝔸 ℙℝ𝕆ℙ𝔼ℝ𝕋𝕐</h1>
+      <form>
+        <label>TYPE : </label><br>	<!--FOR THE TYPE OF THE PROPERTY-->
+          <input type="radio" name="type" id="TYPE1" class = "TYPE" value = "House">
+					<label for="TYPE1">House</label>
+					
+          <input type="radio" name="type" id="TYPE2" class = "TYPE" value = "Flat">
+					<label for="TYPE2">Flat</label>
+					
+          <input type="radio" name="type" id="TYPE3" class = "TYPE" value = "Any" checked>
+					<label for="TYPE3">Any</label>
+						
+					<br>
+          
+
+          <p>
+            <label for="amount">Price range:</label>
+            <input type="text" id="amount" readonly class="goldSliderText">
+          </p>
+          <br><br>
+					<div id="slider-range"></div>
+
+      </form>
+      
+       
+        
+    </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+  <div class="my-1">
+
+    <footer class="container text-center text-lg-start" style="background-color: rgba(0, 0, 0, 0);">
+      <div class="container d-flex justify-content-center py-0">
+        
+        <a href="https://www.facebook.com/profile.php?id=100008192711028&mibextid=LQQJ4d" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        
+        <a href="https://github.com/Mithakshara" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+        <a href="https://www.facebook.com/profile.php?id=100008192711028&mibextid=LQQJ4d" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+    
+  </div>
+  <script src="scrip.js"></script>
+  
+
+    
+</body>
+</html>
