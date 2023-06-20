@@ -73,11 +73,8 @@ form{
     padding-left: 2vw;
     padding-top: 4vh;
 }
-#Footer{
-    display: flex;
-    
+
+#slider-range{
+    width: 80%;
 }
-#Footer img{
-    width: 50%;
-    height: 35%;
-}
+
